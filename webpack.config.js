@@ -9,10 +9,36 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/template.html',
       title: 'Neon Restaurant',
       filename: 'index.html',
       inject:'body'
     })
-  ]
+  ],
+  module:{
+    rules:[
+      {
+        test: /\.css$/,
+        use:["style-loader","css-loader"]
+      },
+      {
+        test : /\.html$/,
+        use: ['html-loader']
+      },
+      {
+        test: /\.(jpeg|jpg|png)$/,
+        use:[
+          {
+            loader: 'file-loader',
+            options:{
+              name:'[name].[ext]',
+              outputPath: 'images'
+            
+            }
+          }
+        ]
+      }
+      
+    ]
+  }
 };
