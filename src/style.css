@@ -1,35 +1,39 @@
 
-
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(210, 50%, 14%);
-  height: 100vh;
+  height: 115vh;
+  color: #fff;
+  font-family: Blippo;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #ff4da6,
+    0 0 80px #ff4da6,
+    0 0 90px #ff4da6,
+    0 0 100px #ff4da6,
+    0 0 150px #ff4da6;
   
 }
 .headr {
-    padding: 60px;
-    
+    padding: 40px;
+    text-align: center ;
     background: hsl(210, 50%, 14%);
-    
     font-size: 30px;
-    margin: auto;
     width: 75%;
     opacity: 0.9;
-    border-radius: 80%;
-    border: 5px solid yellow;
+    border: 3px solid yellow;
     box-shadow: 0px 10px 40px 5px yellow;
-    margin-left:50px;
-    
-    
+    margin:auto;
     }
     
    
     
   
 
-  .hpContent{
+  .content{
     text-align: center;
     background: hsl(210, 50%, 14%);
     color: yellow;
@@ -38,11 +42,11 @@ body {
     width: 75%;
     opacity: 0.9;
     border-radius: 2%;
-    border: 5px solid red;
+    border: 3px solid red;
     margin-top: 20px;
     color: #fff;
     text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+   
     box-shadow: 0px 10px 40px 5px red;
   }
   @-webkit-keyframes glow {
@@ -85,11 +89,7 @@ body {
     transition: 0.2s ease;
     }
 
-    .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    
 
     #mainimg{
       margin:10px;
@@ -105,9 +105,67 @@ body {
       width: 100%;
       color: white;
       text-align: center;
-      border:3px solid yellow;
+      border-top:3px solid yellow;
       box-shadow: 0px 10px 40px 5px yellow;
       animation: glow 1s ease-in-out infinite alternate;
       display:block;
    }
- 
+
+   
+   .mContent{
+    background: hsl(210, 50%, 14%);
+    font-size: 30px;
+    margin: auto;
+    opacity: 0.9;
+    width: 35%;
+    border-radius: 2%;
+    border: 3px solid red;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 40px 5px red;
+    display:grid;
+    
+    padding: 30px;
+    
+   }
+
+.mapouter{
+  margin:20px;
+}
+
+.itemPic{
+  height:120px;
+  width:120px;
+  border-radius: 80%;
+  box-shadow: 0px 10px 40px 5px #26C956;
+      border:3px solid #26C956;
+      float:left;
+      transition: 1s ease;
+      transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  display:inline;
+}
+
+
+  p{
+   
+  display:inline-block;
+    
+  }
+  .menuItem{
+    transition: 1s ease;
+      transition-duration: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+
+  }
+
+  .menuItem:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.2s ease;
+    }

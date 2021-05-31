@@ -3,9 +3,9 @@ import img from './images/hpimage.jpg';
 function generateHP(){
 
  const hpContent = document.createElement("div");
-hpContent.classList.add("hpContent");
+hpContent.classList.add("content");
 const p = document.createElement("p");
-p.textContent="Isto definitivamente não é uma página genérica para um restaurante fictício! \n Aqui temos todos os tipos de culinária que possas imaginar, desde: \nGelados, Pizzas, Hamburgueres, Kebabs, entre muitos outros!";
+p.textContent="Isto definitivamente não é uma página genérica para um restaurante fictício! \n Aqui temos todos os tipos de culinária que possas imaginar, desde: \nGelados, Pizzas, Hamburgueres, Kebabs, entre muitos outros! Venha experimentar!";
 const image = document.createElement("img");
 image.setAttribute("id","mainimg");
 image.src = img
